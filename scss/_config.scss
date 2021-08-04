@@ -6,11 +6,26 @@
 $font-family--primary: "Fraunces", serif;
 $font-family--secondary: "Barlow", sans-serif;
 
-//Descriptive base colors
-$text-primary: #fefcf7;
-$text-secondary: #333d4b;
-$black: #000;
-$bg-green: #0e8784;
-$bg-black: #2c343e;
-$grey: #83888f;
-$apricot: #fdd6ba;
+//Colors
+$lotion: #fefcf7;
+$charcoal: #333d4b;
+$seaweed: #0e8784;
+$gunmetal: #2c343e;
+$silver: #83888f;
+$peach: #fdd6ba;
+$sea: #66d2cf;
+$gainsboro: #e2dedb;
+$isabelline: #f4f1eb;
+
+$primary: $lotion;
+$text: $charcoal;
+$bg-green: $seaweed;
+$bg-black: $gunmetal;
+$grey: $silver;
+$btn-hover: $sea;
+$btn-disabled: $gainsboro;
+$selection: $isabelline;
+$selection-hover: $peach;
+
+//Text
+$font-size: 16px;
