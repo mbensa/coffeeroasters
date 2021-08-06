@@ -1,5 +1,5 @@
 /****************************************
-*************Import Files****************
+************Import Subfolders************
 ****************************************/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -305,3 +305,64 @@ template {
  */
 [hidden] {
   display: none; }
+
+/****************************************
+*************Global Config***************
+****************************************/
+html {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  line-height: 1.625rem; }
+
+/****************************************
+*************Import Files****************
+****************************************/
+/****************************************
+****************Navbar*******************
+****************************************/
+.navbar {
+  padding: 32px 24px 40px 24px; }
+  @media (min-width: 768px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; } }
+  .navbar .logo {
+    height: 18px; }
+  .navbar .navbar-toggle {
+    position: absolute;
+    height: 15px;
+    right: 24px;
+    cursor: pointer; }
+    @media (min-width: 768px) {
+      .navbar .navbar-toggle {
+        display: none; } }
+  .navbar .main-nav {
+    list-style-type: none;
+    text-align: center;
+    display: none;
+    padding: 0;
+    margin-bottom: 0; }
+    .navbar .main-nav.active {
+      display: block; }
+    @media (min-width: 768px) {
+      .navbar .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; } }
+    .navbar .main-nav li .nav-links {
+      text-decoration: none;
+      color: #83888f;
+      font-weight: 700;
+      font-size: 0.75rem; }
+      @media (min-width: 768px) {
+        .navbar .main-nav li .nav-links {
+          padding-left: 30px; } }
+
+/****************************************
+****************Header*******************
+****************************************/
+.home-page .header {
+  background-image: url("../../assets/home/mobile/image-hero-coffeepress.jpg");
+  background-size: cover;
+  min-height: 500px; }

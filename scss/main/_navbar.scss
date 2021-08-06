@@ -1,0 +1,53 @@
+/****************************************
+****************Navbar*******************
+****************************************/
+.navbar {
+  padding: 32px 24px 40px 24px;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    height: 18px;
+  }
+
+  .navbar-toggle {
+    position: absolute;
+    height: 15px;
+    right: 24px;
+    cursor: pointer;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .main-nav {
+    list-style-type: none;
+    text-align: center;
+    display: none;
+    padding: 0;
+    margin-bottom: 0;
+    &.active {
+      display: block;
+    }
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    li {
+      .nav-links {
+        text-decoration: none;
+        color: $grey;
+        font-weight: 700;
+        font-size: 0.75rem;
+        @media (min-width: 768px) {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}
