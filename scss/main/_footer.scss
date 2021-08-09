@@ -1,0 +1,38 @@
+/****************************************
+**************Main footer****************
+****************************************/
+.main-footer {
+  background-color: $bg-black;
+  margin-bottom: 72px;
+  text-align: center;
+
+  .footer-logo {
+    margin: 50px 0;
+  }
+
+  .footer-navbar {
+    font-size: 0.75rem;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+
+    li {
+      a {
+        text-decoration: none;
+        color: $grey;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .social-media {
+    padding: 50px 0;
+
+    img {
+      padding-left: 24px;
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
