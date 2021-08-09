@@ -1,0 +1,56 @@
+/****************************************
+****************Why Us*******************
+****************************************/
+.home-page {
+  .why-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $bg-black;
+    border-radius: 8px;
+    margin-top: 120px;
+
+    .why-main {
+      h2 {
+        font-family: $font-family--primary;
+        font-size: 1.75rem;
+        color: $primary;
+        padding: 62px 24px 24px 24px;
+      }
+
+      p {
+        padding: 0 24px 660px 24px;
+        color: $primary;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .why-reason-container {
+    margin-top: -600px;
+    text-align: center;
+
+    .why-reason {
+      background-color: $bg-green;
+      border-radius: 8px;
+      margin: 0 20px 24px 20px;
+      padding: 72px 24px 51px 24px;
+
+      .why-reason-img {
+        height: 72px;
+      }
+
+      .why-reason-title {
+        font-family: $font-family--primary;
+        font-size: 1.5rem;
+        color: $primary;
+        margin: 56px 0 24px 0;
+      }
+
+      .why-reason-text {
+        color: $primary;
+      }
+    }
+  }
+}
