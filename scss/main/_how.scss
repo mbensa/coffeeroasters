@@ -1,0 +1,39 @@
+/****************************************
+**************How it works***************
+****************************************/
+.home-page {
+  .how-container {
+    margin: 120px 0;
+    text-align: center;
+
+    h2 {
+      font-family: $font-family--primary;
+      color: $grey;
+      font-size: 1.5rem;
+      margin-bottom: 80px;
+    }
+
+    .steps-container {
+      .steps-number {
+        font-family: $font-family--primary;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        color: $selection-hover;
+        margin: 0 0 24px 0;
+      }
+
+      .steps-title {
+        font-family: $font-family--primary;
+        font-size: 1.75rem;
+        line-height: 2rem;
+        margin: 0 0 24px 0;
+        color: $text;
+      }
+
+      .steps-text {
+        color: $text;
+        margin-bottom: 56px;
+      }
+    }
+  }
+}
