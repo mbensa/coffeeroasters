@@ -312,7 +312,9 @@ template {
 html {
   font-family: "Barlow", sans-serif;
   font-size: 1rem;
-  line-height: 1.625rem; }
+  line-height: 1.625rem;
+  padding-left: 24px;
+  padding-right: 24px; }
 
 /****************************************
 *************Import Files****************
@@ -321,14 +323,14 @@ html {
 ****************Navbar*******************
 ****************************************/
 .navbar {
-  padding: 32px 24px 40px 24px; }
+  padding: 32px 0 40px 0; }
   @media (min-width: 768px) {
     .navbar {
       display: flex;
       justify-content: space-between;
       align-items: center; } }
   .navbar .logo {
-    height: 18px; }
+    max-height: 18px; }
   .navbar .navbar-toggle {
     position: absolute;
     height: 15px;
@@ -363,6 +365,63 @@ html {
 ****************Header*******************
 ****************************************/
 .home-page .header {
-  background-image: url("../../assets/home/mobile/image-hero-coffeepress.jpg");
+  background-image: url("../assets/home/mobile/image-hero-coffeepress.jpg");
   background-size: cover;
-  min-height: 500px; }
+  min-height: 500px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px; }
+  .home-page .header h1 {
+    font-family: "Fraunces", serif;
+    color: #fefcf7;
+    text-align: center;
+    padding: 100px 24px 24px 24px;
+    line-height: 2.5rem; }
+  .home-page .header p {
+    color: #fefcf7;
+    text-align: center;
+    padding: 0 24px 40px 24px;
+    opacity: 0.8; }
+  .home-page .header .create-plan {
+    background-color: #0e8784;
+    border-radius: 6px;
+    font-family: "Fraunces", serif;
+    font-size: 1.125rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fefcf7;
+    padding: 15px 25px;
+    margin: 0 50px 100px 50px; }
+
+/****************************************
+**************Collection*****************
+****************************************/
+.home-page .coffee-collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .home-page .coffee-collection h2 {
+    font-family: "Fraunces", serif;
+    text-align: center;
+    color: #83888f;
+    font-size: 2rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(0deg, white 0%, #83888f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 13px 0;
+    line-height: 4.5rem; }
+  .home-page .coffee-collection .coffee-packet {
+    max-height: 150px;
+    margin: 48px 0 24px 0; }
+    .home-page .coffee-collection .coffee-packet:first-of-type {
+      margin-top: 0; }
+  .home-page .coffee-collection .coffee-title {
+    margin: 0 0 16px 0;
+    font-family: "Fraunces", serif;
+    color: #333d4b;
+    text-align: center; }
+  .home-page .coffee-collection .coffee-description {
+    color: #333d4b;
+    text-align: center; }

@@ -1,0 +1,43 @@
+/****************************************
+**************Collection*****************
+****************************************/
+.home-page {
+  .coffee-collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-family: $font-family--primary;
+      text-align: center;
+      color: $grey;
+      font-size: 2rem;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(131, 136, 143, 1) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0 0 13px 0;
+      line-height: 4.5rem;
+    }
+
+    .coffee-packet {
+      max-height: 150px;
+      margin: 48px 0 24px 0;
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    .coffee-title {
+      margin: 0 0 16px 0;
+      font-family: $font-family--primary;
+      color: $text;
+      text-align: center;
+    }
+
+    .coffee-description {
+      color: $text;
+      text-align: center;
+    }
+  }
+}

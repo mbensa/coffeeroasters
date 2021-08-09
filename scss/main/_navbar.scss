@@ -2,7 +2,7 @@
 ****************Navbar*******************
 ****************************************/
 .navbar {
-  padding: 32px 24px 40px 24px;
+  padding: 32px 0 40px 0;
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -10,7 +10,7 @@
   }
 
   .logo {
-    height: 18px;
+    max-height: 18px;
   }
 
   .navbar-toggle {
