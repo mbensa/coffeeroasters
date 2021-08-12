@@ -6,25 +6,49 @@
   .header {
     background-image: url("../assets/home/mobile/image-hero-coffeepress.jpg");
     background-size: cover;
-    min-height: 500px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     margin-bottom: 120px;
+    align-items: center;
+    padding: 100px 24px;
+
+    @media (min-width: 768px) {
+      background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg");
+      align-items: flex-start;
+      padding-left: 58px;
+    }
 
     h1 {
       font-family: $font-family--primary;
       color: $primary;
       text-align: center;
-      padding: 100px 24px 24px 24px;
+      margin-bottom: 24px;
+      font-size: 2.5rem;
       line-height: 2.5rem;
+
+      @media (min-width: 768px) {
+        font-size: 3rem;
+        line-height: 3rem;
+        max-width: 330px;
+        text-align: left;
+      }
     }
 
     p {
       color: $primary;
       text-align: center;
-      padding: 0 24px 40px 24px;
+      margin-bottom: 40px;
       opacity: 0.8;
+
+      @media (min-width: 768px) {
+        text-align: left;
+        max-width: 400px;
+      }
+    }
+
+    .create-plan {
+      @include createPlan;
     }
   }
 }

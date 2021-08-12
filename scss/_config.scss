@@ -31,22 +31,29 @@ $selection-hover: $peach;
 $font-base--size: 1rem;
 $text-line-height: 1.625rem;
 
+//Mixins
+@mixin createPlan {
+  background-color: $bg-green;
+  border-radius: 8px;
+  font-family: $font-family--primary;
+  font-size: 1.125rem;
+  text-align: center;
+  text-decoration: none;
+  color: $primary;
+  padding: 15px 25px;
+}
+
 html {
   font-family: $font-family--secondary;
   font-size: $font-base--size;
   line-height: $text-line-height;
   padding-left: 24px;
   padding-right: 24px;
+}
 
-  .create-plan {
-    background-color: $bg-green;
-    border-radius: 8px;
-    font-family: $font-family--primary;
-    font-size: 1.125rem;
-    text-align: center;
-    text-decoration: none;
-    color: $primary;
-    padding: 15px 25px;
-    margin: 0 50px 100px 50px;
-  }
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }

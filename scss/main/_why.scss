@@ -9,20 +9,24 @@
     text-align: center;
     background-color: $bg-black;
     border-radius: 8px;
-    margin-top: 120px;
+    margin-top: 80px;
 
     .why-main {
       h2 {
         font-family: $font-family--primary;
         font-size: 1.75rem;
         color: $primary;
-        padding: 62px 24px 24px 24px;
+        padding: 62px 0 24px 0;
       }
 
       p {
         padding: 0 24px 660px 24px;
         color: $primary;
         opacity: 0.8;
+
+        @media (min-width: 768px) {
+          padding: 0 80px 660px 80px;
+        }
       }
     }
   }

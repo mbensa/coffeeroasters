@@ -16,28 +16,49 @@
       background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(131, 136, 143, 1) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin: 0 0 13px 0;
+      margin-bottom: 13px;
       line-height: 4.5rem;
-    }
 
-    .coffee-packet {
-      max-height: 150px;
-      margin: 48px 0 24px 0;
-      &:first-of-type {
-        margin-top: 0;
+      @media (min-width: 768px) {
+        font-size: 6rem;
+        opacity: 0.5;
+        margin: 0;
       }
     }
 
-    .coffee-title {
-      margin: 0 0 16px 0;
-      font-family: $font-family--primary;
-      color: $text;
-      text-align: center;
-    }
+    .coffee-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    .coffee-description {
-      color: $text;
-      text-align: center;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        margin: 0 98px;
+        max-width: 700px;
+      }
+
+      .coffee-packet-container {
+        .coffee-packet {
+          max-height: 150px;
+          margin-bottom: 24px;
+        }
+      }
+      .coffee-description-container {
+        text-align: center;
+        color: $text;
+        @media (min-width: 768px) {
+          text-align: left;
+        }
+
+        .coffee-title {
+          margin: 0 0 16px 0;
+          font-family: $font-family--primary;
+        }
+
+        .coffee-description {
+          margin-bottom: 48px;
+        }
+      }
     }
   }
 }

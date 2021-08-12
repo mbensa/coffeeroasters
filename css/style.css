@@ -315,16 +315,12 @@ html {
   line-height: 1.625rem;
   padding-left: 24px;
   padding-right: 24px; }
-  html .create-plan {
-    background-color: #0e8784;
-    border-radius: 8px;
-    font-family: "Fraunces", serif;
-    font-size: 1.125rem;
-    text-align: center;
-    text-decoration: none;
-    color: #fefcf7;
-    padding: 15px 25px;
-    margin: 0 50px 100px 50px; }
+
+h1,
+h2,
+h3,
+p {
+  margin: 0; }
 
 /****************************************
 *************Import Files****************
@@ -354,14 +350,12 @@ html {
     text-align: center;
     display: none;
     padding: 0;
-    margin-bottom: 0; }
+    margin: 0; }
     .navbar .main-nav.active {
       display: block; }
     @media (min-width: 768px) {
       .navbar .main-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end; } }
+        display: flex; } }
     .navbar .main-nav li .nav-links {
       text-decoration: none;
       color: #83888f;
@@ -377,22 +371,48 @@ html {
 .home-page .header {
   background-image: url("../assets/home/mobile/image-hero-coffeepress.jpg");
   background-size: cover;
-  min-height: 500px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 120px; }
+  margin-bottom: 120px;
+  align-items: center;
+  padding: 100px 24px; }
+  @media (min-width: 768px) {
+    .home-page .header {
+      background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg");
+      align-items: flex-start;
+      padding-left: 58px; } }
   .home-page .header h1 {
     font-family: "Fraunces", serif;
     color: #fefcf7;
     text-align: center;
-    padding: 100px 24px 24px 24px;
+    margin-bottom: 24px;
+    font-size: 2.5rem;
     line-height: 2.5rem; }
+    @media (min-width: 768px) {
+      .home-page .header h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+        max-width: 330px;
+        text-align: left; } }
   .home-page .header p {
     color: #fefcf7;
     text-align: center;
-    padding: 0 24px 40px 24px;
+    margin-bottom: 40px;
     opacity: 0.8; }
+    @media (min-width: 768px) {
+      .home-page .header p {
+        text-align: left;
+        max-width: 400px; } }
+  .home-page .header .create-plan {
+    background-color: #0e8784;
+    border-radius: 8px;
+    font-family: "Fraunces", serif;
+    font-size: 1.125rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fefcf7;
+    padding: 15px 25px; }
 
 /****************************************
 **************Collection*****************
@@ -410,21 +430,36 @@ html {
     background: linear-gradient(0deg, white 0%, #83888f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 0 0 13px 0;
+    margin-bottom: 13px;
     line-height: 4.5rem; }
-  .home-page .coffee-collection .coffee-packet {
-    max-height: 150px;
-    margin: 48px 0 24px 0; }
-    .home-page .coffee-collection .coffee-packet:first-of-type {
-      margin-top: 0; }
-  .home-page .coffee-collection .coffee-title {
-    margin: 0 0 16px 0;
-    font-family: "Fraunces", serif;
-    color: #333d4b;
-    text-align: center; }
-  .home-page .coffee-collection .coffee-description {
-    color: #333d4b;
-    text-align: center; }
+    @media (min-width: 768px) {
+      .home-page .coffee-collection h2 {
+        font-size: 6rem;
+        opacity: 0.5;
+        margin: 0; } }
+  .home-page .coffee-collection .coffee-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .home-page .coffee-collection .coffee-container {
+        flex-direction: row;
+        margin: 0 98px;
+        max-width: 700px; } }
+    .home-page .coffee-collection .coffee-container .coffee-packet-container .coffee-packet {
+      max-height: 150px;
+      margin-bottom: 24px; }
+    .home-page .coffee-collection .coffee-container .coffee-description-container {
+      text-align: center;
+      color: #333d4b; }
+      @media (min-width: 768px) {
+        .home-page .coffee-collection .coffee-container .coffee-description-container {
+          text-align: left; } }
+      .home-page .coffee-collection .coffee-container .coffee-description-container .coffee-title {
+        margin: 0 0 16px 0;
+        font-family: "Fraunces", serif; }
+      .home-page .coffee-collection .coffee-container .coffee-description-container .coffee-description {
+        margin-bottom: 48px; }
 
 /****************************************
 ****************Why Us*******************
@@ -436,16 +471,19 @@ html {
   text-align: center;
   background-color: #2c343e;
   border-radius: 8px;
-  margin-top: 120px; }
+  margin-top: 80px; }
   .home-page .why-us .why-main h2 {
     font-family: "Fraunces", serif;
     font-size: 1.75rem;
     color: #fefcf7;
-    padding: 62px 24px 24px 24px; }
+    padding: 62px 0 24px 0; }
   .home-page .why-us .why-main p {
     padding: 0 24px 660px 24px;
     color: #fefcf7;
     opacity: 0.8; }
+    @media (min-width: 768px) {
+      .home-page .why-us .why-main p {
+        padding: 0 80px 660px 80px; } }
 
 .home-page .why-reason-container {
   margin-top: -600px;
@@ -491,6 +529,15 @@ html {
   .home-page .how-container .steps-container .steps-text {
     color: #333d4b;
     margin-bottom: 56px; }
+  .home-page .how-container .create-plan {
+    background-color: #0e8784;
+    border-radius: 8px;
+    font-family: "Fraunces", serif;
+    font-size: 1.125rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fefcf7;
+    padding: 15px 25px; }
 
 /****************************************
 **************Main footer****************

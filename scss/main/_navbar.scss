@@ -28,14 +28,12 @@
     text-align: center;
     display: none;
     padding: 0;
-    margin-bottom: 0;
+    margin: 0;
     &.active {
       display: block;
     }
     @media (min-width: 768px) {
       display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
     }
 
     li {
