@@ -483,25 +483,45 @@ p {
     opacity: 0.8; }
     @media (min-width: 768px) {
       .home-page .why-us .why-main p {
-        padding: 0 80px 660px 80px; } }
+        padding: 0 80px 360px 80px; } }
 
 .home-page .why-reason-container {
   margin-top: -600px;
   text-align: center; }
+  @media (min-width: 768px) {
+    .home-page .why-reason-container {
+      margin-top: -300px; } }
   .home-page .why-reason-container .why-reason {
     background-color: #0e8784;
     border-radius: 8px;
     margin: 0 20px 24px 20px;
-    padding: 72px 24px 51px 24px; }
-    .home-page .why-reason-container .why-reason .why-reason-img {
-      height: 72px; }
-    .home-page .why-reason-container .why-reason .why-reason-title {
-      font-family: "Fraunces", serif;
-      font-size: 1.5rem;
-      color: #fefcf7;
-      margin: 56px 0 24px 0; }
-    .home-page .why-reason-container .why-reason .why-reason-text {
+    padding: 70px 24px;
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      .home-page .why-reason-container .why-reason {
+        flex-direction: row;
+        padding: 40px 70px; } }
+    .home-page .why-reason-container .why-reason .why-image-container {
+      align-items: center; }
+      @media (min-width: 768px) {
+        .home-page .why-reason-container .why-reason .why-image-container {
+          display: flex; } }
+      .home-page .why-reason-container .why-reason .why-image-container .why-reason-img {
+        height: 72px; }
+    .home-page .why-reason-container .why-reason .why-description-container {
       color: #fefcf7; }
+      @media (min-width: 768px) {
+        .home-page .why-reason-container .why-reason .why-description-container {
+          padding: 0 50px;
+          text-align: left; } }
+      .home-page .why-reason-container .why-reason .why-description-container .why-reason-title {
+        font-family: "Fraunces", serif;
+        font-size: 1.5rem;
+        margin: 56px 0 24px 0; }
+        @media (min-width: 768px) {
+          .home-page .why-reason-container .why-reason .why-description-container .why-reason-title {
+            margin: 0 0 24px 0; } }
 
 /****************************************
 **************How it works***************
