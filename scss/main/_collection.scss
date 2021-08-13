@@ -24,39 +24,60 @@
         opacity: 0.5;
         margin: 0;
       }
+
+      @media (min-width: 1024px) {
+        font-size: 7rem;
+        line-height: 6rem;
+      }
     }
 
-    .coffee-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      @media (min-width: 768px) {
-        flex-direction: row;
-        margin: 0 98px;
-        max-width: 700px;
+    .coffee-collection-container {
+      @media (min-width: 1024px) {
+        display: flex;
       }
 
-      .coffee-packet-container {
-        .coffee-packet {
-          max-height: 150px;
-          margin-bottom: 24px;
-        }
-      }
-      .coffee-description-container {
-        text-align: center;
-        color: $text;
+      .coffee-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         @media (min-width: 768px) {
-          text-align: left;
+          flex-direction: row;
+          margin: 0 98px;
+          max-width: 700px;
         }
 
-        .coffee-title {
-          margin: 0 0 16px 0;
-          font-family: $font-family--primary;
+        @media (min-width: 1024px) {
+          flex-direction: column;
+          margin: 0 20px;
         }
 
-        .coffee-description {
-          margin-bottom: 48px;
+        .coffee-packet-container {
+          .coffee-packet {
+            max-height: 150px;
+            margin-bottom: 24px;
+          }
+        }
+        .coffee-description-container {
+          text-align: center;
+          color: $text;
+
+          @media (min-width: 768px) {
+            text-align: left;
+          }
+
+          @media (min-width: 1024px) {
+            text-align: center;
+          }
+
+          .coffee-title {
+            margin: 0 0 16px 0;
+            font-family: $font-family--primary;
+          }
+
+          .coffee-description {
+            margin-bottom: 48px;
+          }
         }
       }
     }

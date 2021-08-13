@@ -6,6 +6,13 @@
   margin-bottom: 72px;
   text-align: center;
 
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    justify-content: space-between;
+  }
+
   .footer-logo {
     margin: 50px 0;
   }
@@ -29,17 +36,27 @@
         text-decoration: none;
         color: $grey;
         font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          color: $primary;
+        }
       }
     }
   }
 
   .social-media {
     padding: 50px 0;
+    cursor: pointer;
 
-    img {
+    svg {
       padding-left: 24px;
       &:first-child {
         padding-left: 0;
+      }
+      path {
+        &:hover {
+          fill: $selection-hover;
+        }
       }
     }
   }

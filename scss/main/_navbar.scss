@@ -43,6 +43,9 @@
         color: $grey;
         font-weight: 700;
         font-size: 0.75rem;
+        &:hover {
+          color: $text;
+        }
         @media (min-width: 768px) {
           padding-left: 30px;
         }

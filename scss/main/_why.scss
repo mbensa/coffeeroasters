@@ -27,6 +27,11 @@
         @media (min-width: 768px) {
           padding: 0 80px 360px 80px;
         }
+
+        @media (min-width: 1024px) {
+          max-width: 600px;
+          padding: 0 80px 300px 80px;
+        }
       }
     }
   }
@@ -37,6 +42,12 @@
 
     @media (min-width: 768px) {
       margin-top: -300px;
+    }
+
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: center;
+      margin-top: -250px;
     }
 
     .why-reason {
@@ -50,6 +61,13 @@
       @media (min-width: 768px) {
         flex-direction: row;
         padding: 40px 70px;
+      }
+
+      @media (min-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        max-width: 400px;
       }
 
       .why-image-container {
@@ -70,6 +88,11 @@
         @media (min-width: 768px) {
           padding: 0 50px;
           text-align: left;
+        }
+
+        @media (min-width: 1024px) {
+          padding: 50px 15px 0 15px;
+          text-align: center;
         }
 
         .why-reason-title {

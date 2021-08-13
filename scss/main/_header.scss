@@ -19,6 +19,10 @@
       padding-left: 58px;
     }
 
+    @media (min-width: 1024px) {
+      background-image: url("../assets/home/desktop/image-hero-coffeepress.jpg");
+    }
+
     h1 {
       font-family: $font-family--primary;
       color: $primary;
@@ -33,6 +37,12 @@
         max-width: 330px;
         text-align: left;
       }
+
+      @media (min-width: 1024px) {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        max-width: 500px;
+      }
     }
 
     p {
@@ -44,6 +54,10 @@
       @media (min-width: 768px) {
         text-align: left;
         max-width: 400px;
+      }
+
+      @media (min-width: 1024px) {
+        max-width: 500px;
       }
     }
 

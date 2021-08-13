@@ -364,6 +364,8 @@ p {
       color: #83888f;
       font-weight: 700;
       font-size: 0.75rem; }
+      .navbar .main-nav li .nav-links:hover {
+        color: #333d4b; }
       @media (min-width: 768px) {
         .navbar .main-nav li .nav-links {
           padding-left: 30px; } }
@@ -385,6 +387,9 @@ p {
       background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg");
       align-items: flex-start;
       padding-left: 58px; } }
+  @media (min-width: 1024px) {
+    .home-page .header {
+      background-image: url("../assets/home/desktop/image-hero-coffeepress.jpg"); } }
   .home-page .header h1 {
     font-family: "Fraunces", serif;
     color: #fefcf7;
@@ -398,6 +403,11 @@ p {
         line-height: 3rem;
         max-width: 330px;
         text-align: left; } }
+    @media (min-width: 1024px) {
+      .home-page .header h1 {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        max-width: 500px; } }
   .home-page .header p {
     color: #fefcf7;
     text-align: center;
@@ -407,6 +417,9 @@ p {
       .home-page .header p {
         text-align: left;
         max-width: 400px; } }
+    @media (min-width: 1024px) {
+      .home-page .header p {
+        max-width: 500px; } }
   .home-page .header .create-plan {
     background-color: #0e8784;
     border-radius: 8px;
@@ -416,6 +429,8 @@ p {
     text-decoration: none;
     color: #fefcf7;
     padding: 15px 25px; }
+    .home-page .header .create-plan:hover {
+      background-color: #66d2cf; }
 
 /****************************************
 **************Collection*****************
@@ -440,28 +455,42 @@ p {
         font-size: 5rem;
         opacity: 0.5;
         margin: 0; } }
-  .home-page .coffee-collection .coffee-container {
+    @media (min-width: 1024px) {
+      .home-page .coffee-collection h2 {
+        font-size: 7rem;
+        line-height: 6rem; } }
+  @media (min-width: 1024px) {
+    .home-page .coffee-collection .coffee-collection-container {
+      display: flex; } }
+  .home-page .coffee-collection .coffee-collection-container .coffee-container {
     display: flex;
     flex-direction: column;
     align-items: center; }
     @media (min-width: 768px) {
-      .home-page .coffee-collection .coffee-container {
+      .home-page .coffee-collection .coffee-collection-container .coffee-container {
         flex-direction: row;
         margin: 0 98px;
         max-width: 700px; } }
-    .home-page .coffee-collection .coffee-container .coffee-packet-container .coffee-packet {
+    @media (min-width: 1024px) {
+      .home-page .coffee-collection .coffee-collection-container .coffee-container {
+        flex-direction: column;
+        margin: 0 20px; } }
+    .home-page .coffee-collection .coffee-collection-container .coffee-container .coffee-packet-container .coffee-packet {
       max-height: 150px;
       margin-bottom: 24px; }
-    .home-page .coffee-collection .coffee-container .coffee-description-container {
+    .home-page .coffee-collection .coffee-collection-container .coffee-container .coffee-description-container {
       text-align: center;
       color: #333d4b; }
       @media (min-width: 768px) {
-        .home-page .coffee-collection .coffee-container .coffee-description-container {
+        .home-page .coffee-collection .coffee-collection-container .coffee-container .coffee-description-container {
           text-align: left; } }
-      .home-page .coffee-collection .coffee-container .coffee-description-container .coffee-title {
+      @media (min-width: 1024px) {
+        .home-page .coffee-collection .coffee-collection-container .coffee-container .coffee-description-container {
+          text-align: center; } }
+      .home-page .coffee-collection .coffee-collection-container .coffee-container .coffee-description-container .coffee-title {
         margin: 0 0 16px 0;
         font-family: "Fraunces", serif; }
-      .home-page .coffee-collection .coffee-container .coffee-description-container .coffee-description {
+      .home-page .coffee-collection .coffee-collection-container .coffee-container .coffee-description-container .coffee-description {
         margin-bottom: 48px; }
 
 /****************************************
@@ -487,6 +516,10 @@ p {
     @media (min-width: 768px) {
       .home-page .why-us .why-main p {
         padding: 0 80px 360px 80px; } }
+    @media (min-width: 1024px) {
+      .home-page .why-us .why-main p {
+        max-width: 600px;
+        padding: 0 80px 300px 80px; } }
 
 .home-page .why-reason-container {
   margin-top: -600px;
@@ -494,6 +527,11 @@ p {
   @media (min-width: 768px) {
     .home-page .why-reason-container {
       margin-top: -300px; } }
+  @media (min-width: 1024px) {
+    .home-page .why-reason-container {
+      display: flex;
+      justify-content: center;
+      margin-top: -250px; } }
   .home-page .why-reason-container .why-reason {
     background-color: #0e8784;
     border-radius: 8px;
@@ -505,6 +543,12 @@ p {
       .home-page .why-reason-container .why-reason {
         flex-direction: row;
         padding: 40px 70px; } }
+    @media (min-width: 1024px) {
+      .home-page .why-reason-container .why-reason {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        max-width: 400px; } }
     .home-page .why-reason-container .why-reason .why-image-container {
       align-items: center; }
       @media (min-width: 768px) {
@@ -518,6 +562,10 @@ p {
         .home-page .why-reason-container .why-reason .why-description-container {
           padding: 0 50px;
           text-align: left; } }
+      @media (min-width: 1024px) {
+        .home-page .why-reason-container .why-reason .why-description-container {
+          padding: 50px 15px 0 15px;
+          text-align: center; } }
       .home-page .why-reason-container .why-reason .why-description-container .why-reason-title {
         font-family: "Fraunces", serif;
         font-size: 1.5rem;
@@ -535,6 +583,10 @@ p {
   @media (min-width: 768px) {
     .home-page .how-container {
       text-align: left; } }
+  @media (min-width: 1024px) {
+    .home-page .how-container {
+      padding: 0 80px;
+      max-width: 1500px; } }
   .home-page .how-container h2 {
     font-family: "Fraunces", serif;
     color: #83888f;
@@ -594,6 +646,8 @@ p {
     text-decoration: none;
     color: #fefcf7;
     padding: 15px 25px; }
+    .home-page .how-container .create-plan:hover {
+      background-color: #66d2cf; }
 
 /****************************************
 **************Main footer****************
@@ -602,6 +656,12 @@ p {
   background-color: #2c343e;
   margin-bottom: 72px;
   text-align: center; }
+  @media (min-width: 1024px) {
+    .main-footer {
+      display: flex;
+      align-items: center;
+      padding: 0 100px;
+      justify-content: space-between; } }
   .main-footer .footer-logo {
     margin: 50px 0; }
   .main-footer .footer-navbar {
@@ -619,10 +679,16 @@ p {
     .main-footer .footer-navbar li a {
       text-decoration: none;
       color: #83888f;
-      font-weight: bold; }
+      font-weight: bold;
+      cursor: pointer; }
+      .main-footer .footer-navbar li a:hover {
+        color: #fefcf7; }
   .main-footer .social-media {
-    padding: 50px 0; }
-    .main-footer .social-media img {
+    padding: 50px 0;
+    cursor: pointer; }
+    .main-footer .social-media svg {
       padding-left: 24px; }
-      .main-footer .social-media img:first-child {
+      .main-footer .social-media svg:first-child {
         padding-left: 0; }
+      .main-footer .social-media svg path:hover {
+        fill: #fdd6ba; }

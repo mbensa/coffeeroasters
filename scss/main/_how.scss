@@ -10,6 +10,11 @@
       text-align: left;
     }
 
+    @media (min-width: 1024px) {
+      padding: 0 80px;
+      max-width: 1500px;
+    }
+
     h2 {
       font-family: $font-family--primary;
       color: $grey;
