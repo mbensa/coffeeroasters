@@ -9,12 +9,9 @@
     text-align: center;
     background-color: $bg-black;
     border-radius: 8px;
-    margin-top: 80px;
 
     .why-main {
       h2 {
-        font-family: $font-family--primary;
-        font-size: 1.75rem;
         color: $primary;
         padding: 62px 0 24px 0;
       }
@@ -39,6 +36,7 @@
   .why-reason-container {
     margin-top: -600px;
     text-align: center;
+    @include margin;
 
     @media (min-width: 768px) {
       margin-top: -300px;
@@ -68,6 +66,7 @@
         align-items: center;
         padding: 40px;
         max-width: 400px;
+        margin-bottom: 0;
       }
 
       .why-image-container {
@@ -96,8 +95,6 @@
         }
 
         .why-reason-title {
-          font-family: $font-family--primary;
-          font-size: 1.5rem;
           margin: 56px 0 24px 0;
 
           @media (min-width: 768px) {

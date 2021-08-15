@@ -6,12 +6,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include margin;
 
-    h2 {
+    .collection-title {
       font-family: $font-family--primary;
+      font-size: 2.5rem;
+      line-height: 4.5rem;
       text-align: center;
       color: $grey;
-      font-size: 2rem;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(131, 136, 143, 1) 100%);
       -webkit-background-clip: text;
@@ -40,11 +42,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 40px;
+        &:last-child {
+          margin-bottom: 0;
+        }
 
         @media (min-width: 768px) {
           flex-direction: row;
           margin: 0 98px;
           max-width: 700px;
+          margin-bottom: 0;
         }
 
         @media (min-width: 1024px) {
@@ -72,11 +79,7 @@
 
           .coffee-title {
             margin: 0 0 16px 0;
-            font-family: $font-family--primary;
-          }
-
-          .coffee-description {
-            margin-bottom: 48px;
+            color: $text;
           }
         }
       }

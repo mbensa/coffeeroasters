@@ -31,6 +31,10 @@
     margin: 0;
     &.active {
       display: block;
+      background: linear-gradient(360deg, rgba(254, 252, 247, 0.504981) 0%, #ffffff 55.94%);
+      position: absolute;
+      width: 100%;
+      min-height: 600px;
     }
     @media (min-width: 768px) {
       display: flex;
@@ -38,16 +42,30 @@
     }
 
     li {
+      margin-top: 30px;
+
+      @media (min-width: 768px) {
+        margin-top: 0;
+      }
+
       .nav-links {
         text-decoration: none;
-        color: $grey;
-        font-weight: 700;
-        font-size: 0.75rem;
+        font-family: $font-family--primary;
+        color: $text;
+        font-weight: 900;
+        font-size: 1.5rem;
+        line-height: 2rem;
         &:hover {
           color: $text;
         }
         @media (min-width: 768px) {
           padding-left: 30px;
+          font-family: $font-family--secondary;
+          line-height: $text-line-height;
+          color: $grey;
+          font-size: 0.75rem;
+          font-weight: 700;
+          text-transform: uppercase;
         }
       }
     }
