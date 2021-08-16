@@ -4,23 +4,54 @@
 .about-us {
   .quality {
     @include margin;
+    background-color: $bg-secondary;
+    border-radius: 8px;
+
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      max-width: 1600px;
+      margin: 200px auto 120px auto;
+    }
 
     picture {
       display: flex;
       justify-content: center;
+      margin-top: 200px;
+
+      @media (min-width: 1024px) {
+        width: 50%;
+        margin-top: -80px;
+        padding-bottom: 50px;
+      }
+
       img {
         width: 80%;
         border-radius: 8px;
-        margin-bottom: -80px;
+        margin-top: -80px;
+
+        @media (min-width: 1024px) {
+          margin: 0;
+          width: initial;
+        }
       }
     }
     .quality-description-container {
-      background-color: $bg-secondary;
-      border-radius: 8px;
+      @media (min-width: 1024px) {
+        width: 50%;
+        display: flex;
+        align-items: center;
+      }
 
       .quality-text-container {
-        padding: 140px 24px 60px 24px;
+        padding: 60px 24px;
         text-align: center;
+
+        @media (min-width: 1024px) {
+          text-align: left;
+          padding: 60px 50px;
+        }
 
         .quality-title {
           margin-bottom: 24px;

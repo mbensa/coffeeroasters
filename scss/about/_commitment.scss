@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include margin;
 
     @media (min-width: 768px) {
       flex-direction: row;
