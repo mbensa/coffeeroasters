@@ -50,39 +50,7 @@
     }
 
     .steps-container {
-      @media (min-width: 768px) {
-        display: flex;
-      }
-
-      .steps {
-        @media (min-width: 768px) {
-          margin-right: 20px;
-          &:last-child {
-            margin-right: 0;
-          }
-        }
-        .steps-number {
-          font-family: $font-family-primary;
-          font-size: 4.5rem;
-          line-height: 4.5rem;
-          color: $selection-hover;
-          margin-bottom: 24px;
-
-          @media (min-width: 768px) {
-            margin-bottom: 50px;
-          }
-        }
-
-        .steps-title {
-          margin: 0 0 24px 0;
-          color: $text;
-        }
-
-        .steps-text {
-          color: $text;
-          margin-bottom: 56px;
-        }
-      }
+      @include steps;
     }
 
     .create-plan {

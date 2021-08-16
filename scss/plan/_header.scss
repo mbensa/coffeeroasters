@@ -1,0 +1,20 @@
+/****************************************
+**********Header Create Plan*************
+****************************************/
+.create-plan {
+  .plan-header {
+    @include header;
+    @include margin;
+    background-image: url(../assets/plan/mobile/image-hero-blackcup.jpg);
+
+    .plan-title {
+      margin-bottom: 22px;
+    }
+
+    .plan-description {
+      color: $primary;
+      opacity: 0.8;
+      text-align: center;
+    }
+  }
+}

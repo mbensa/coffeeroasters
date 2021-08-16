@@ -668,7 +668,8 @@ p {
       background: linear-gradient(360deg, rgba(254, 252, 247, 0.504981) 0%, #ffffff 55.94%);
       position: absolute;
       width: 100%;
-      min-height: 600px; }
+      min-height: 600px;
+      left: 0; }
     @media (min-width: 768px) {
       .navbar .main-nav {
         display: flex;
@@ -903,3 +904,66 @@ p {
         @media (min-width: 768px) {
           .about-us .hq .hq-container .hq-address-container .address {
             text-align: left; } }
+
+/****************************************
+*************Import Files****************
+****************************************/
+/****************************************
+**********Header Create Plan*************
+****************************************/
+.create-plan .plan-header {
+  background-size: cover;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 24px;
+  margin-bottom: 120px;
+  background-image: url(../assets/plan/mobile/image-hero-blackcup.jpg); }
+  @media (min-width: 768px) {
+    .create-plan .plan-header {
+      align-items: flex-start;
+      padding-left: 58px; } }
+  .create-plan .plan-header .plan-title {
+    margin-bottom: 22px; }
+  .create-plan .plan-header .plan-description {
+    color: #fefcf7;
+    opacity: 0.8;
+    text-align: center; }
+
+/****************************************
+******************Steps******************
+****************************************/
+.create-plan .how-steps {
+  background-color: #2c343e;
+  border-radius: 8px; }
+  .create-plan .how-steps .steps-container {
+    text-align: center;
+    padding: 80px 24px; }
+    @media (min-width: 768px) {
+      .create-plan .how-steps .steps-container {
+        display: flex; } }
+    @media (min-width: 768px) {
+      .create-plan .how-steps .steps-container .steps {
+        margin-right: 20px; }
+        .create-plan .how-steps .steps-container .steps:last-child {
+          margin-right: 0; } }
+    .create-plan .how-steps .steps-container .steps .steps-number {
+      font-family: "Fraunces", serif;
+      font-size: 4.5rem;
+      line-height: 4.5rem;
+      color: #fdd6ba;
+      margin-bottom: 24px; }
+      @media (min-width: 768px) {
+        .create-plan .how-steps .steps-container .steps .steps-number {
+          margin-bottom: 50px; } }
+    .create-plan .how-steps .steps-container .steps .steps-title {
+      margin: 0 0 24px 0;
+      color: #333d4b; }
+    .create-plan .how-steps .steps-container .steps .steps-text {
+      color: #333d4b;
+      margin-bottom: 56px; }
+    .create-plan .how-steps .steps-container .steps .steps-title {
+      color: #fefcf7; }
+    .create-plan .how-steps .steps-container .steps .steps-text {
+      color: #fefcf7; }

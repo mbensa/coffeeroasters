@@ -1,0 +1,25 @@
+/****************************************
+******************Steps******************
+****************************************/
+.create-plan {
+  .how-steps {
+    background-color: $bg-secondary;
+    border-radius: 8px;
+
+    .steps-container {
+      @include steps;
+      text-align: center;
+      padding: 80px 24px;
+
+      .steps {
+        .steps-title {
+          color: $primary;
+        }
+
+        .steps-text {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
