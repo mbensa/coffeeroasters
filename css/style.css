@@ -371,7 +371,7 @@ p {
 /****************************************
 **************Header Main****************
 ****************************************/
-.home-page .header {
+.home-page .home-header {
   background-image: url("../assets/home/mobile/image-hero-coffeepress.jpg");
   background-size: cover;
   border-radius: 8px;
@@ -381,38 +381,38 @@ p {
   padding: 100px 24px;
   margin-bottom: 120px; }
   @media (min-width: 768px) {
-    .home-page .header {
+    .home-page .home-header {
       align-items: flex-start;
       padding-left: 58px; } }
   @media (min-width: 768px) {
-    .home-page .header {
+    .home-page .home-header {
       background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg"); } }
   @media (min-width: 1024px) {
-    .home-page .header {
+    .home-page .home-header {
       background-image: url("../assets/home/desktop/image-hero-coffeepress.jpg"); } }
-  .home-page .header h1 {
+  .home-page .home-header h1 {
     text-align: center;
     margin-bottom: 24px; }
     @media (min-width: 768px) {
-      .home-page .header h1 {
+      .home-page .home-header h1 {
         max-width: 330px;
         text-align: left; } }
     @media (min-width: 1024px) {
-      .home-page .header h1 {
+      .home-page .home-header h1 {
         max-width: 500px; } }
-  .home-page .header p {
+  .home-page .home-header p {
     text-align: center;
     margin-bottom: 40px;
     opacity: 0.8;
     color: #fefcf7; }
     @media (min-width: 768px) {
-      .home-page .header p {
+      .home-page .home-header p {
         text-align: left;
         max-width: 400px; } }
     @media (min-width: 1024px) {
-      .home-page .header p {
+      .home-page .home-header p {
         max-width: 500px; } }
-  .home-page .header .create-plan {
+  .home-page .home-header .create-plan {
     background-color: #0e8784;
     border-radius: 8px;
     font-family: "Fraunces", serif;
@@ -421,7 +421,7 @@ p {
     text-decoration: none;
     color: #fefcf7;
     padding: 15px 25px; }
-    .home-page .header .create-plan:hover {
+    .home-page .home-header .create-plan:hover {
       background-color: #66d2cf; }
 
 /****************************************
@@ -744,3 +744,138 @@ p {
 /****************************************
 *************Import Files****************
 ****************************************/
+/****************************************
+************Header About Us**************
+****************************************/
+.about-us .about-header {
+  background-image: url("../assets/about/mobile/image-hero-whitecup.jpg");
+  background-size: cover;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 24px;
+  margin-bottom: 120px; }
+  @media (min-width: 768px) {
+    .about-us .about-header {
+      align-items: flex-start;
+      padding-left: 58px; } }
+  @media (min-width: 768px) {
+    .about-us .about-header {
+      background-image: url("../assets/about/tablet/image-hero-whitecup.jpg"); } }
+  @media (min-width: 1024px) {
+    .about-us .about-header {
+      background-image: url("../assets/about/desktop/image-hero-whitecup.jpg"); } }
+  @media (min-width: 768px) {
+    .about-us .about-header .about-text-container {
+      max-width: 70%; } }
+  @media (min-width: 768px) {
+    .about-us .about-header .about-text-container {
+      max-width: 50%; } }
+  .about-us .about-header .about-text-container h2 {
+    margin-bottom: 24px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .about-us .about-header .about-text-container h2 {
+        text-align: left; } }
+  .about-us .about-header .about-text-container p {
+    color: #fefcf7;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .about-us .about-header .about-text-container p {
+        text-align: left; } }
+
+/****************************************
+**************Commitment*****************
+****************************************/
+.about-us .commitment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px; }
+  @media (min-width: 768px) {
+    .about-us .commitment {
+      flex-direction: row; } }
+  @media (min-width: 1024px) {
+    .about-us .commitment {
+      max-width: 80vw;
+      margin: 0 auto;
+      margin-bottom: 120px; } }
+  .about-us .commitment .top-image img {
+    max-width: 100%;
+    border-radius: 8px; }
+    @media (min-width: 768px) {
+      .about-us .commitment .top-image img {
+        max-width: initial; } }
+  @media (min-width: 768px) {
+    .about-us .commitment .commitment-text-container {
+      margin-left: 50px; } }
+  .about-us .commitment .commitment-text-container .commitment-title {
+    color: #333d4b;
+    margin: 48px 0 30px 0;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .about-us .commitment .commitment-text-container .commitment-title {
+        margin-top: 0;
+        text-align: left; } }
+
+/****************************************
+****************Quality******************
+****************************************/
+.about-us .quality {
+  margin-bottom: 120px; }
+  .about-us .quality picture {
+    display: flex;
+    justify-content: center; }
+    .about-us .quality picture img {
+      width: 80%;
+      border-radius: 8px;
+      margin-bottom: -80px; }
+  .about-us .quality .quality-description-container {
+    background-color: #2c343e;
+    border-radius: 8px; }
+    .about-us .quality .quality-description-container .quality-text-container {
+      padding: 140px 24px 60px 24px;
+      text-align: center; }
+      .about-us .quality .quality-description-container .quality-text-container .quality-title {
+        margin-bottom: 24px; }
+      .about-us .quality .quality-description-container .quality-text-container .quality-description {
+        color: #fefcf7; }
+
+/****************************************
+**************Headquarters***************
+****************************************/
+.about-us .hq {
+  margin-bottom: 120px; }
+  .about-us .hq .hq-title {
+    color: #83888f;
+    text-align: center;
+    margin-bottom: 70px; }
+    @media (min-width: 768px) {
+      .about-us .hq .hq-title {
+        text-align: left; } }
+  .about-us .hq .hq-container {
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      .about-us .hq .hq-container {
+        flex-direction: row; } }
+    .about-us .hq .hq-container .hq-address-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 80px; }
+      .about-us .hq .hq-container .hq-address-container:last-child {
+        margin-bottom: 0; }
+      @media (min-width: 768px) {
+        .about-us .hq .hq-container .hq-address-container {
+          margin: 0 40px 0 0;
+          align-items: flex-start; } }
+      .about-us .hq .hq-container .hq-address-container .country {
+        color: #333d4b;
+        margin: 48px 0 22px 0; }
+      .about-us .hq .hq-container .hq-address-container .address {
+        text-align: center; }
+        @media (min-width: 768px) {
+          .about-us .hq .hq-container .hq-address-container .address {
+            text-align: left; } }

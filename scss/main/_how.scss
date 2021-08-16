@@ -35,7 +35,7 @@
         @media (min-width: 768px) {
           height: 30px;
           width: 30px;
-          border: 2px solid $bg-green;
+          border: 2px solid $bg-primary;
           border-radius: 50%;
         }
       }
@@ -62,7 +62,7 @@
           }
         }
         .steps-number {
-          font-family: $font-family--primary;
+          font-family: $font-family-primary;
           font-size: 4.5rem;
           line-height: 4.5rem;
           color: $selection-hover;

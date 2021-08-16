@@ -1,0 +1,35 @@
+/****************************************
+****************Quality******************
+****************************************/
+.about-us {
+  .quality {
+    @include margin;
+
+    picture {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 80%;
+        border-radius: 8px;
+        margin-bottom: -80px;
+      }
+    }
+    .quality-description-container {
+      background-color: $bg-secondary;
+      border-radius: 8px;
+
+      .quality-text-container {
+        padding: 140px 24px 60px 24px;
+        text-align: center;
+
+        .quality-title {
+          margin-bottom: 24px;
+        }
+
+        .quality-description {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

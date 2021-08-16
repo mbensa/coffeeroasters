@@ -1,0 +1,48 @@
+/****************************************
+**************Commitment*****************
+****************************************/
+.about-us {
+  .commitment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include margin;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    @media (min-width: 1024px) {
+      max-width: 80vw;
+      margin: 0 auto;
+      @include margin;
+    }
+    .top-image {
+      img {
+        max-width: 100%;
+        border-radius: 8px;
+
+        @media (min-width: 768px) {
+          max-width: initial;
+        }
+      }
+    }
+
+    .commitment-text-container {
+      @media (min-width: 768px) {
+        margin-left: 50px;
+      }
+
+      .commitment-title {
+        color: $text;
+        margin: 48px 0 30px 0;
+        text-align: center;
+
+        @media (min-width: 768px) {
+          margin-top: 0;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

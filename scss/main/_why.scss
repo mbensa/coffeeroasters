@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: $bg-black;
+    background-color: $bg-secondary;
     border-radius: 8px;
 
     .why-main {
@@ -49,7 +49,7 @@
     }
 
     .why-reason {
-      background-color: $bg-green;
+      background-color: $bg-primary;
       border-radius: 8px;
       margin: 0 20px 24px 20px;
       padding: 70px 24px;

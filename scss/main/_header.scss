@@ -3,7 +3,7 @@
 ****************************************/
 
 .home-page {
-  .header {
+  .home-header {
     background-image: url("../assets/home/mobile/image-hero-coffeepress.jpg");
     @include header;
     @include margin;

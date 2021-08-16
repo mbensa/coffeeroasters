@@ -1,0 +1,46 @@
+/****************************************
+************Header About Us**************
+****************************************/
+.about-us {
+  .about-header {
+    background-image: url("../assets/about/mobile/image-hero-whitecup.jpg");
+    @include header;
+    @include margin;
+
+    @media (min-width: 768px) {
+      background-image: url("../assets/about/tablet/image-hero-whitecup.jpg");
+    }
+
+    @media (min-width: 1024px) {
+      background-image: url("../assets/about/desktop/image-hero-whitecup.jpg");
+    }
+
+    .about-text-container {
+      @media (min-width: 768px) {
+        max-width: 70%;
+      }
+
+      @media (min-width: 768px) {
+        max-width: 50%;
+      }
+
+      h2 {
+        margin-bottom: 24px;
+        text-align: center;
+
+        @media (min-width: 768px) {
+          text-align: left;
+        }
+      }
+
+      p {
+        color: $primary;
+        text-align: center;
+
+        @media (min-width: 768px) {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
