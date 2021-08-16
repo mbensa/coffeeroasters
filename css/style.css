@@ -316,7 +316,7 @@ html {
   padding: 0 24px; }
   @media (min-width: 768px) {
     html {
-      padding: 0 40px; } }
+      padding: 0 80px; } }
 
 h1,
 h2,
@@ -708,7 +708,7 @@ p {
     .main-footer {
       display: flex;
       align-items: center;
-      padding: 0 100px;
+      padding: 0 80px;
       justify-content: space-between; } }
   .main-footer .footer-logo {
     margin: 50px 0; }
@@ -830,7 +830,6 @@ p {
       display: flex;
       flex-direction: row-reverse;
       justify-content: center;
-      max-width: 1600px;
       margin: 200px auto 120px auto; } }
   .about-us .quality picture {
     display: flex;
@@ -894,7 +893,8 @@ p {
       @media (min-width: 768px) {
         .about-us .hq .hq-container .hq-address-container {
           margin: 0 40px 0 0;
-          align-items: flex-start; } }
+          align-items: flex-start;
+          width: calc(100vw / 3); } }
       .about-us .hq .hq-container .hq-address-container .country {
         color: #333d4b;
         margin: 48px 0 22px 0; }

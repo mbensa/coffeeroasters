@@ -34,6 +34,7 @@
         @media (min-width: 768px) {
           margin: 0 40px 0 0;
           align-items: flex-start;
+          width: calc(100vw / 3);
         }
 
         .country {
