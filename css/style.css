@@ -925,12 +925,21 @@ p {
     .create-plan .plan-header {
       align-items: flex-start;
       padding-left: 58px; } }
-  .create-plan .plan-header .plan-title {
+  @media (min-width: 768px) {
+    .create-plan .plan-header .plan-text-container {
+      width: 80%; } }
+  @media (min-width: 1024px) {
+    .create-plan .plan-header .plan-text-container {
+      width: 60%; } }
+  .create-plan .plan-header .plan-text-container .plan-title {
     margin-bottom: 22px; }
-  .create-plan .plan-header .plan-description {
+  .create-plan .plan-header .plan-text-container .plan-description {
     color: #fefcf7;
     opacity: 0.8;
     text-align: center; }
+    @media (min-width: 768px) {
+      .create-plan .plan-header .plan-text-container .plan-description {
+        text-align: left; } }
 
 /****************************************
 ******************Steps******************
@@ -946,6 +955,9 @@ p {
       padding-top: 100px;
       padding-left: 24px;
       width: 80%; } }
+  @media (min-width: 1024px) {
+    .create-plan .plan-steps .plan-lines {
+      padding-left: 58px; } }
   @media (min-width: 768px) {
     .create-plan .plan-steps .plan-lines .plan-line {
       height: 1px;
@@ -966,6 +978,9 @@ p {
       display: flex;
       padding-left: 24px;
       justify-content: space-between; } }
+  @media (min-width: 1024px) {
+    .create-plan .plan-steps .plan-lines .plan-dots .dot-container {
+      padding-left: 58px; } }
   @media (min-width: 768px) {
     .create-plan .plan-steps .plan-lines .plan-dots .dot-container .dot {
       height: 30px;
@@ -1002,6 +1017,9 @@ p {
     @media (min-width: 768px) {
       .create-plan .plan-steps .steps-container {
         text-align: left; } }
+    @media (min-width: 1024px) {
+      .create-plan .plan-steps .steps-container {
+        padding: 80px 58px; } }
     .create-plan .plan-steps .steps-container .steps:last-child {
       margin-bottom: 0; }
     .create-plan .plan-steps .steps-container .steps .steps-title {
@@ -1012,8 +1030,41 @@ p {
 /****************************************
 ******************Order******************
 ****************************************/
+@media (min-width: 1024px) {
+  .create-plan .order {
+    display: flex; } }
+
+@media (min-width: 2100px) {
+  .create-plan .order {
+    max-width: 80%;
+    margin: 0 auto; } }
+
 .create-plan .order .menu {
   display: none; }
+  @media (min-width: 1024px) {
+    .create-plan .order .menu {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      margin-right: 150px; } }
+  @media (min-width: 1024px) {
+    .create-plan .order .menu .menu-title {
+      padding: 0;
+      color: #83888f;
+      position: relative;
+      margin-bottom: 50px; }
+      .create-plan .order .menu .menu-title::after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #83888f;
+        position: absolute;
+        left: 0;
+        top: 60px; } }
+
+@media (min-width: 1024px) {
+  .create-plan .order .order-container {
+    width: 70%; } }
 
 .create-plan .order .order-container .order-choice .order-accordion {
   display: flex;
@@ -1021,12 +1072,15 @@ p {
   margin-bottom: 32px; }
   .create-plan .order .order-container .order-choice .order-accordion .order-title {
     color: #83888f;
-    max-width: 80%; }
+    max-width: 90%; }
   .create-plan .order .order-container .order-choice .order-accordion .arrow {
     align-self: center; }
 
 .create-plan .order .order-container .order-choice .order-panel {
   margin-bottom: 100px; }
+  @media (min-width: 768px) {
+    .create-plan .order .order-container .order-choice .order-panel {
+      display: flex; } }
   .create-plan .order .order-container .order-choice .order-panel .order-panel-section {
     background-color: #f4f1eb;
     border-radius: 8px;
@@ -1034,29 +1088,42 @@ p {
     padding: 25px; }
     .create-plan .order .order-container .order-choice .order-panel .order-panel-section:last-child {
       margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .create-plan .order .order-container .order-choice .order-panel .order-panel-section {
+        margin-right: 20px;
+        margin-bottom: 0;
+        height: 200px; }
+        .create-plan .order .order-container .order-choice .order-panel .order-panel-section:last-child {
+          margin-right: 0; } }
     .create-plan .order .order-container .order-choice .order-panel .order-panel-section .panel-title {
       color: #333d4b;
       margin-bottom: 8px; }
 
-.create-plan .order-summary {
+.create-plan .order .order-summary {
   margin-bottom: 120px; }
-  .create-plan .order-summary .text-container {
+  @media (min-width: 1024px) {
+    .create-plan .order .order-summary {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; } }
+  .create-plan .order .order-summary .text-container {
     background-color: #2c343e;
     padding: 40px 25px;
-    margin-bottom: 56px; }
-    .create-plan .order-summary .text-container .summary-title {
+    margin-bottom: 56px;
+    border-radius: 8px; }
+    .create-plan .order .order-summary .text-container .summary-title {
       color: white;
       opacity: 0.5;
       font-size: 1rem;
       margin-bottom: 10px; }
-    .create-plan .order-summary .text-container .summary-text {
+    .create-plan .order .order-summary .text-container .summary-text {
       font-family: "Fraunces", serif;
       font-size: 1.5rem;
       line-height: 2.5rem;
       color: white; }
-  .create-plan .order-summary .order-confirmation {
+  .create-plan .order .order-summary .order-confirmation {
     text-align: center; }
-    .create-plan .order-summary .order-confirmation .create-plan {
+    .create-plan .order .order-summary .order-confirmation .create-plan {
       background-color: #0e8784;
       border-radius: 8px;
       font-family: "Fraunces", serif;
@@ -1065,5 +1132,5 @@ p {
       text-decoration: none;
       color: #fefcf7;
       padding: 15px 25px; }
-      .create-plan .order-summary .order-confirmation .create-plan:hover {
+      .create-plan .order .order-summary .order-confirmation .create-plan:hover {
         background-color: #66d2cf; }

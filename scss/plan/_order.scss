@@ -3,11 +3,47 @@
 ****************************************/
 .create-plan {
   .order {
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+
+    @media (min-width: 2100px) {
+      max-width: 80%;
+      margin: 0 auto;
+    }
     .menu {
       display: none;
+
+      @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-right: 150px;
+      }
+
+      .menu-title {
+        @media (min-width: 1024px) {
+          padding: 0;
+          color: $grey;
+          position: relative;
+          margin-bottom: 50px;
+          &::after {
+            content: "";
+            height: 1px;
+            width: 100%;
+            background-color: $grey;
+            position: absolute;
+            left: 0;
+            top: 60px;
+          }
+        }
+      }
     }
 
     .order-container {
+      @media (min-width: 1024px) {
+        width: 70%;
+      }
       .order-choice {
         .order-accordion {
           display: flex;
@@ -16,7 +52,7 @@
 
           .order-title {
             color: $grey;
-            max-width: 80%;
+            max-width: 90%;
           }
 
           .arrow {
@@ -27,6 +63,10 @@
         .order-panel {
           margin-bottom: 100px;
 
+          @media (min-width: 768px) {
+            display: flex;
+          }
+
           .order-panel-section {
             background-color: $selection;
             border-radius: 8px;
@@ -34,6 +74,15 @@
             padding: 25px;
             &:last-child {
               margin-bottom: 0;
+            }
+
+            @media (min-width: 768px) {
+              margin-right: 20px;
+              margin-bottom: 0;
+              height: 200px;
+              &:last-child {
+                margin-right: 0;
+              }
             }
 
             .panel-title {
@@ -44,33 +93,39 @@
         }
       }
     }
-  }
+    .order-summary {
+      @include margin;
 
-  .order-summary {
-    @include margin;
-    .text-container {
-      background-color: $bg-secondary;
-      padding: 40px 25px;
-      margin-bottom: 56px;
-
-      .summary-title {
-        color: white;
-        opacity: 0.5;
-        font-size: 1rem;
-        margin-bottom: 10px;
+      @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
       }
+      .text-container {
+        background-color: $bg-secondary;
+        padding: 40px 25px;
+        margin-bottom: 56px;
+        border-radius: 8px;
 
-      .summary-text {
-        font-family: $font-family-primary;
-        font-size: 1.5rem;
-        line-height: 2.5rem;
-        color: white;
+        .summary-title {
+          color: white;
+          opacity: 0.5;
+          font-size: 1rem;
+          margin-bottom: 10px;
+        }
+
+        .summary-text {
+          font-family: $font-family-primary;
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+          color: white;
+        }
       }
-    }
-    .order-confirmation {
-      text-align: center;
-      .create-plan {
-        @include createPlan;
+      .order-confirmation {
+        text-align: center;
+        .create-plan {
+          @include createPlan;
+        }
       }
     }
   }
