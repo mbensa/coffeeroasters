@@ -2,15 +2,66 @@
 ******************Steps******************
 ****************************************/
 .create-plan {
-  .how-steps {
+  .plan-steps {
     background-color: $bg-secondary;
     border-radius: 8px;
     @include margin;
+
+    .plan-lines {
+      @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        padding-top: 100px;
+        padding-left: 24px;
+        width: 80%;
+      }
+
+      .plan-line {
+        @media (min-width: 768px) {
+          height: 1px;
+          background: $selection-hover;
+          width: 100%;
+          position: relative;
+          width: 100%;
+        }
+      }
+      .plan-dots {
+        @media (min-width: 768px) {
+          position: absolute;
+          display: flex;
+          left: 0;
+          right: 0;
+          padding: 0 80px;
+        }
+
+        .dot-container {
+          @media (min-width: 768px) {
+            width: 80%;
+            display: flex;
+            padding-left: 24px;
+            justify-content: space-between;
+          }
+
+          .dot {
+            @media (min-width: 768px) {
+              height: 30px;
+              width: 30px;
+              border: 2px solid $bg-primary;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
 
     .steps-container {
       @include steps;
       text-align: center;
       padding: 80px 24px;
+
+      @media (min-width: 768px) {
+        text-align: left;
+      }
 
       .steps {
         &:last-child {

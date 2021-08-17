@@ -935,42 +935,78 @@ p {
 /****************************************
 ******************Steps******************
 ****************************************/
-.create-plan .how-steps {
+.create-plan .plan-steps {
   background-color: #2c343e;
   border-radius: 8px;
   margin-bottom: 120px; }
-  .create-plan .how-steps .steps-container {
+  @media (min-width: 768px) {
+    .create-plan .plan-steps .plan-lines {
+      display: flex;
+      align-items: center;
+      padding-top: 100px;
+      padding-left: 24px;
+      width: 80%; } }
+  @media (min-width: 768px) {
+    .create-plan .plan-steps .plan-lines .plan-line {
+      height: 1px;
+      background: #fdd6ba;
+      width: 100%;
+      position: relative;
+      width: 100%; } }
+  @media (min-width: 768px) {
+    .create-plan .plan-steps .plan-lines .plan-dots {
+      position: absolute;
+      display: flex;
+      left: 0;
+      right: 0;
+      padding: 0 80px; } }
+  @media (min-width: 768px) {
+    .create-plan .plan-steps .plan-lines .plan-dots .dot-container {
+      width: 80%;
+      display: flex;
+      padding-left: 24px;
+      justify-content: space-between; } }
+  @media (min-width: 768px) {
+    .create-plan .plan-steps .plan-lines .plan-dots .dot-container .dot {
+      height: 30px;
+      width: 30px;
+      border: 2px solid #0e8784;
+      border-radius: 50%; } }
+  .create-plan .plan-steps .steps-container {
     text-align: center;
     padding: 80px 24px; }
     @media (min-width: 768px) {
-      .create-plan .how-steps .steps-container {
+      .create-plan .plan-steps .steps-container {
         display: flex; } }
-    .create-plan .how-steps .steps-container .steps {
+    .create-plan .plan-steps .steps-container .steps {
       margin-bottom: 56px; }
       @media (min-width: 768px) {
-        .create-plan .how-steps .steps-container .steps {
+        .create-plan .plan-steps .steps-container .steps {
           margin-right: 20px; }
-          .create-plan .how-steps .steps-container .steps:last-child {
+          .create-plan .plan-steps .steps-container .steps:last-child {
             margin-right: 0; } }
-      .create-plan .how-steps .steps-container .steps .steps-number {
+      .create-plan .plan-steps .steps-container .steps .steps-number {
         font-family: "Fraunces", serif;
         font-size: 4.5rem;
         line-height: 4.5rem;
         color: #fdd6ba;
         margin-bottom: 24px; }
         @media (min-width: 768px) {
-          .create-plan .how-steps .steps-container .steps .steps-number {
+          .create-plan .plan-steps .steps-container .steps .steps-number {
             margin-bottom: 50px; } }
-      .create-plan .how-steps .steps-container .steps .steps-title {
+      .create-plan .plan-steps .steps-container .steps .steps-title {
         margin: 0 0 24px 0;
         color: #333d4b; }
-      .create-plan .how-steps .steps-container .steps .steps-text {
+      .create-plan .plan-steps .steps-container .steps .steps-text {
         color: #333d4b; }
-    .create-plan .how-steps .steps-container .steps:last-child {
+    @media (min-width: 768px) {
+      .create-plan .plan-steps .steps-container {
+        text-align: left; } }
+    .create-plan .plan-steps .steps-container .steps:last-child {
       margin-bottom: 0; }
-    .create-plan .how-steps .steps-container .steps .steps-title {
+    .create-plan .plan-steps .steps-container .steps .steps-title {
       color: #fefcf7; }
-    .create-plan .how-steps .steps-container .steps .steps-text {
+    .create-plan .plan-steps .steps-container .steps .steps-text {
       color: #fefcf7; }
 
 /****************************************
