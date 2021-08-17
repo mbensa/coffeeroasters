@@ -605,26 +605,27 @@ p {
   @media (min-width: 768px) {
     .home-page .how-container .steps-container {
       display: flex; } }
-  @media (min-width: 768px) {
-    .home-page .how-container .steps-container .steps {
-      margin-right: 20px; }
-      .home-page .how-container .steps-container .steps:last-child {
-        margin-right: 0; } }
-  .home-page .how-container .steps-container .steps .steps-number {
-    font-family: "Fraunces", serif;
-    font-size: 4.5rem;
-    line-height: 4.5rem;
-    color: #fdd6ba;
-    margin-bottom: 24px; }
-    @media (min-width: 768px) {
-      .home-page .how-container .steps-container .steps .steps-number {
-        margin-bottom: 50px; } }
-  .home-page .how-container .steps-container .steps .steps-title {
-    margin: 0 0 24px 0;
-    color: #333d4b; }
-  .home-page .how-container .steps-container .steps .steps-text {
-    color: #333d4b;
+  .home-page .how-container .steps-container .steps {
     margin-bottom: 56px; }
+    @media (min-width: 768px) {
+      .home-page .how-container .steps-container .steps {
+        margin-right: 20px; }
+        .home-page .how-container .steps-container .steps:last-child {
+          margin-right: 0; } }
+    .home-page .how-container .steps-container .steps .steps-number {
+      font-family: "Fraunces", serif;
+      font-size: 4.5rem;
+      line-height: 4.5rem;
+      color: #fdd6ba;
+      margin-bottom: 24px; }
+      @media (min-width: 768px) {
+        .home-page .how-container .steps-container .steps .steps-number {
+          margin-bottom: 50px; } }
+    .home-page .how-container .steps-container .steps .steps-title {
+      margin: 0 0 24px 0;
+      color: #333d4b; }
+    .home-page .how-container .steps-container .steps .steps-text {
+      color: #333d4b; }
   .home-page .how-container .create-plan {
     background-color: #0e8784;
     border-radius: 8px;
@@ -936,34 +937,97 @@ p {
 ****************************************/
 .create-plan .how-steps {
   background-color: #2c343e;
-  border-radius: 8px; }
+  border-radius: 8px;
+  margin-bottom: 120px; }
   .create-plan .how-steps .steps-container {
     text-align: center;
     padding: 80px 24px; }
     @media (min-width: 768px) {
       .create-plan .how-steps .steps-container {
         display: flex; } }
-    @media (min-width: 768px) {
-      .create-plan .how-steps .steps-container .steps {
-        margin-right: 20px; }
-        .create-plan .how-steps .steps-container .steps:last-child {
-          margin-right: 0; } }
-    .create-plan .how-steps .steps-container .steps .steps-number {
-      font-family: "Fraunces", serif;
-      font-size: 4.5rem;
-      line-height: 4.5rem;
-      color: #fdd6ba;
-      margin-bottom: 24px; }
-      @media (min-width: 768px) {
-        .create-plan .how-steps .steps-container .steps .steps-number {
-          margin-bottom: 50px; } }
-    .create-plan .how-steps .steps-container .steps .steps-title {
-      margin: 0 0 24px 0;
-      color: #333d4b; }
-    .create-plan .how-steps .steps-container .steps .steps-text {
-      color: #333d4b;
+    .create-plan .how-steps .steps-container .steps {
       margin-bottom: 56px; }
+      @media (min-width: 768px) {
+        .create-plan .how-steps .steps-container .steps {
+          margin-right: 20px; }
+          .create-plan .how-steps .steps-container .steps:last-child {
+            margin-right: 0; } }
+      .create-plan .how-steps .steps-container .steps .steps-number {
+        font-family: "Fraunces", serif;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        color: #fdd6ba;
+        margin-bottom: 24px; }
+        @media (min-width: 768px) {
+          .create-plan .how-steps .steps-container .steps .steps-number {
+            margin-bottom: 50px; } }
+      .create-plan .how-steps .steps-container .steps .steps-title {
+        margin: 0 0 24px 0;
+        color: #333d4b; }
+      .create-plan .how-steps .steps-container .steps .steps-text {
+        color: #333d4b; }
+    .create-plan .how-steps .steps-container .steps:last-child {
+      margin-bottom: 0; }
     .create-plan .how-steps .steps-container .steps .steps-title {
       color: #fefcf7; }
     .create-plan .how-steps .steps-container .steps .steps-text {
       color: #fefcf7; }
+
+/****************************************
+******************Order******************
+****************************************/
+.create-plan .order .menu {
+  display: none; }
+
+.create-plan .order .order-container .order-choice .order-accordion {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px; }
+  .create-plan .order .order-container .order-choice .order-accordion .order-title {
+    color: #83888f;
+    max-width: 80%; }
+  .create-plan .order .order-container .order-choice .order-accordion .arrow {
+    align-self: center; }
+
+.create-plan .order .order-container .order-choice .order-panel {
+  margin-bottom: 100px; }
+  .create-plan .order .order-container .order-choice .order-panel .order-panel-section {
+    background-color: #f4f1eb;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 25px; }
+    .create-plan .order .order-container .order-choice .order-panel .order-panel-section:last-child {
+      margin-bottom: 0; }
+    .create-plan .order .order-container .order-choice .order-panel .order-panel-section .panel-title {
+      color: #333d4b;
+      margin-bottom: 8px; }
+
+.create-plan .order-summary {
+  margin-bottom: 120px; }
+  .create-plan .order-summary .text-container {
+    background-color: #2c343e;
+    padding: 40px 25px;
+    margin-bottom: 56px; }
+    .create-plan .order-summary .text-container .summary-title {
+      color: white;
+      opacity: 0.5;
+      font-size: 1rem;
+      margin-bottom: 10px; }
+    .create-plan .order-summary .text-container .summary-text {
+      font-family: "Fraunces", serif;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      color: white; }
+  .create-plan .order-summary .order-confirmation {
+    text-align: center; }
+    .create-plan .order-summary .order-confirmation .create-plan {
+      background-color: #0e8784;
+      border-radius: 8px;
+      font-family: "Fraunces", serif;
+      font-size: 1.125rem;
+      text-align: center;
+      text-decoration: none;
+      color: #fefcf7;
+      padding: 15px 25px; }
+      .create-plan .order-summary .order-confirmation .create-plan:hover {
+        background-color: #66d2cf; }

@@ -70,6 +70,7 @@ $text-line-height: 1.625rem;
   }
 
   .steps {
+    margin-bottom: 56px;
     @media (min-width: 768px) {
       margin-right: 20px;
       &:last-child {
@@ -95,7 +96,6 @@ $text-line-height: 1.625rem;
 
     .steps-text {
       color: $text;
-      margin-bottom: 56px;
     }
   }
 }

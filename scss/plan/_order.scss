@@ -1,0 +1,77 @@
+/****************************************
+******************Order******************
+****************************************/
+.create-plan {
+  .order {
+    .menu {
+      display: none;
+    }
+
+    .order-container {
+      .order-choice {
+        .order-accordion {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 32px;
+
+          .order-title {
+            color: $grey;
+            max-width: 80%;
+          }
+
+          .arrow {
+            align-self: center;
+          }
+        }
+
+        .order-panel {
+          margin-bottom: 100px;
+
+          .order-panel-section {
+            background-color: $selection;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            padding: 25px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            .panel-title {
+              color: $text;
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .order-summary {
+    @include margin;
+    .text-container {
+      background-color: $bg-secondary;
+      padding: 40px 25px;
+      margin-bottom: 56px;
+
+      .summary-title {
+        color: white;
+        opacity: 0.5;
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+
+      .summary-text {
+        font-family: $font-family-primary;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: white;
+      }
+    }
+    .order-confirmation {
+      text-align: center;
+      .create-plan {
+        @include createPlan;
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@
   .how-steps {
     background-color: $bg-secondary;
     border-radius: 8px;
+    @include margin;
 
     .steps-container {
       @include steps;
@@ -12,6 +13,9 @@
       padding: 80px 24px;
 
       .steps {
+        &:last-child {
+          margin-bottom: 0;
+        }
         .steps-title {
           color: $primary;
         }
