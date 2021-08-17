@@ -626,6 +626,9 @@ p {
       color: #333d4b; }
     .home-page .how-container .steps-container .steps .steps-text {
       color: #333d4b; }
+  @media (min-width: 768px) {
+    .home-page .how-container .steps-container .steps .steps-title {
+      height: 72px; } }
   .home-page .how-container .create-plan {
     background-color: #0e8784;
     border-radius: 8px;
@@ -1024,6 +1027,9 @@ p {
       margin-bottom: 0; }
     .create-plan .plan-steps .steps-container .steps .steps-title {
       color: #fefcf7; }
+      @media (min-width: 768px) {
+        .create-plan .plan-steps .steps-container .steps .steps-title {
+          height: 72px; } }
     .create-plan .plan-steps .steps-container .steps .steps-text {
       color: #fefcf7; }
 

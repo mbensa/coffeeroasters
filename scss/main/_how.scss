@@ -51,6 +51,13 @@
 
     .steps-container {
       @include steps;
+      .steps {
+        .steps-title {
+          @media (min-width: 768px) {
+            height: 72px;
+          }
+        }
+      }
     }
 
     .create-plan {

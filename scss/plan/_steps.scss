@@ -81,6 +81,10 @@
         }
         .steps-title {
           color: $primary;
+
+          @media (min-width: 768px) {
+            height: 72px;
+          }
         }
 
         .steps-text {
