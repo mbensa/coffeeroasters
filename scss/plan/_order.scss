@@ -28,6 +28,7 @@
           color: $grey;
           position: relative;
           margin-bottom: 50px;
+          cursor: pointer;
           &::after {
             content: "";
             height: 1px;
@@ -36,6 +37,14 @@
             position: absolute;
             left: 0;
             top: 60px;
+          }
+        }
+        &:hover {
+          .menu-title-number {
+            color: $bg-primary;
+          }
+          .menu-title-text {
+            color: $text;
           }
         }
       }
@@ -50,7 +59,13 @@
         .order-accordion {
           display: flex;
           justify-content: space-between;
-          margin-bottom: 32px;
+          margin-bottom: 50px;
+          cursor: pointer;
+          &.active {
+            .arrow {
+              transform: rotate(180deg);
+            }
+          }
 
           .order-title {
             color: $grey;
@@ -64,29 +79,45 @@
 
         .order-panel {
           margin-bottom: 100px;
+          display: none;
+          flex-direction: column;
 
           @media (min-width: 768px) {
-            display: flex;
+            flex-direction: row;
           }
 
-          .order-panel-section {
+          input {
+            display: none;
+            &:checked + label {
+              background: $bg-primary;
+            }
+          }
+
+          label {
             background-color: $selection;
             border-radius: 8px;
             margin-bottom: 16px;
             padding: 25px;
+            cursor: pointer;
             &:last-child {
               margin-bottom: 0;
+            }
+            &:hover {
+              background-color: $selection-hover;
+            }
+            &.focus {
+              background-color: $bg-primary;
             }
 
             @media (min-width: 768px) {
               margin-right: 20px;
               margin-bottom: 0;
-              height: 200px;
+              height: 250px;
               &:last-child {
                 margin-right: 0;
               }
             }
-
+            cursor: pointer;
             .panel-title {
               color: $text;
               margin-bottom: 8px;
@@ -110,6 +141,8 @@
         padding: 40px 25px;
         margin-bottom: 56px;
         border-radius: 8px;
+        width: 100%;
+        box-sizing: border-box;
 
         .summary-title {
           color: white;
@@ -118,11 +151,14 @@
           margin-bottom: 10px;
         }
 
-        .summary-text {
+        #summary-text {
           font-family: $font-family-primary;
           font-size: 1.5rem;
           line-height: 2.5rem;
           color: white;
+          #options {
+            color: $bg-primary;
+          }
         }
       }
 
@@ -131,6 +167,123 @@
 
         .create-plan {
           @include createPlan;
+          border: none;
+          cursor: pointer;
+        }
+
+        #summary {
+          &:disabled {
+            background-color: $btn-disabled;
+          }
+        }
+      }
+    }
+  }
+}
+
+/****************************************
+*****************Summary*****************
+****************************************/
+.create-plan {
+  .overlay-summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.7);
+    z-index: 100;
+
+    &.hidden {
+      display: none;
+    }
+
+    .overlay-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      margin: 20px;
+
+      @media (min-width: 768px) {
+        width: 70%;
+      }
+
+      &.hidden {
+        display: none;
+      }
+
+      .overlay-header {
+        background-color: $bg-secondary;
+        padding: 24px;
+
+        @media (min-width: 768px) {
+          padding: 40px;
+        }
+      }
+
+      .overlay-body {
+        padding: 24px;
+
+        @media (min-width: 768px) {
+          padding: 40px;
+        }
+
+        #summary-overlay-text {
+          font-family: $font-family-primary;
+          color: $grey;
+          font-size: 1.5rem;
+          line-height: 2rem;
+          padding-bottom: 10px;
+
+          #options {
+            color: $bg-primary;
+          }
+        }
+
+        .summary-subtext {
+          color: $text;
+          padding-bottom: 24px;
+        }
+
+        .checkout-mobile {
+          @media (min-width: 768px) {
+            display: none;
+          }
+
+          #checkout {
+            @include createPlan;
+            width: 100%;
+            border: 0;
+          }
+        }
+
+        .checkout-desktop {
+          display: none;
+
+          @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenlys;
+          }
+
+          #checkout-desktop-price {
+            @media (min-width: 768px) {
+              font-family: $font-family-primary;
+              color: $text;
+              font-size: 2rem;
+              width: 50%;
+            }
+          }
+
+          #checkout-desktop {
+            @include createPlan;
+            border: 0;
+            width: 50%;
+          }
         }
       }
     }

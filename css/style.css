@@ -1058,7 +1058,8 @@ p {
       padding: 0;
       color: #83888f;
       position: relative;
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      cursor: pointer; }
       .create-plan .order .menu .menu-title::after {
         content: "";
         height: 1px;
@@ -1067,6 +1068,10 @@ p {
         position: absolute;
         left: 0;
         top: 60px; } }
+  .create-plan .order .menu .menu-title:hover .menu-title-number {
+    color: #0e8784; }
+  .create-plan .order .menu .menu-title:hover .menu-title-text {
+    color: #333d4b; }
 
 @media (min-width: 1024px) {
   .create-plan .order .order-container {
@@ -1075,7 +1080,10 @@ p {
 .create-plan .order .order-container .order-choice .order-accordion {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 32px; }
+  margin-bottom: 50px;
+  cursor: pointer; }
+  .create-plan .order .order-container .order-choice .order-accordion.active .arrow {
+    transform: rotate(180deg); }
   .create-plan .order .order-container .order-choice .order-accordion .order-title {
     color: #83888f;
     max-width: 90%; }
@@ -1083,25 +1091,37 @@ p {
     align-self: center; }
 
 .create-plan .order .order-container .order-choice .order-panel {
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  display: none;
+  flex-direction: column; }
   @media (min-width: 768px) {
     .create-plan .order .order-container .order-choice .order-panel {
-      display: flex; } }
-  .create-plan .order .order-container .order-choice .order-panel .order-panel-section {
+      flex-direction: row; } }
+  .create-plan .order .order-container .order-choice .order-panel input {
+    display: none; }
+    .create-plan .order .order-container .order-choice .order-panel input:checked + label {
+      background: #0e8784; }
+  .create-plan .order .order-container .order-choice .order-panel label {
     background-color: #f4f1eb;
     border-radius: 8px;
     margin-bottom: 16px;
-    padding: 25px; }
-    .create-plan .order .order-container .order-choice .order-panel .order-panel-section:last-child {
+    padding: 25px;
+    cursor: pointer;
+    cursor: pointer; }
+    .create-plan .order .order-container .order-choice .order-panel label:last-child {
       margin-bottom: 0; }
+    .create-plan .order .order-container .order-choice .order-panel label:hover {
+      background-color: #fdd6ba; }
+    .create-plan .order .order-container .order-choice .order-panel label.focus {
+      background-color: #0e8784; }
     @media (min-width: 768px) {
-      .create-plan .order .order-container .order-choice .order-panel .order-panel-section {
+      .create-plan .order .order-container .order-choice .order-panel label {
         margin-right: 20px;
         margin-bottom: 0;
-        height: 200px; }
-        .create-plan .order .order-container .order-choice .order-panel .order-panel-section:last-child {
+        height: 250px; }
+        .create-plan .order .order-container .order-choice .order-panel label:last-child {
           margin-right: 0; } }
-    .create-plan .order .order-container .order-choice .order-panel .order-panel-section .panel-title {
+    .create-plan .order .order-container .order-choice .order-panel label .panel-title {
       color: #333d4b;
       margin-bottom: 8px; }
 
@@ -1116,17 +1136,21 @@ p {
     background-color: #2c343e;
     padding: 40px 25px;
     margin-bottom: 56px;
-    border-radius: 8px; }
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box; }
     .create-plan .order .order-summary .text-container .summary-title {
       color: white;
       opacity: 0.5;
       font-size: 1rem;
       margin-bottom: 10px; }
-    .create-plan .order .order-summary .text-container .summary-text {
+    .create-plan .order .order-summary .text-container #summary-text {
       font-family: "Fraunces", serif;
       font-size: 1.5rem;
       line-height: 2.5rem;
       color: white; }
+      .create-plan .order .order-summary .text-container #summary-text #options {
+        color: #0e8784; }
   .create-plan .order .order-summary .order-confirmation {
     text-align: center; }
     .create-plan .order .order-summary .order-confirmation .create-plan {
@@ -1137,6 +1161,102 @@ p {
       text-align: center;
       text-decoration: none;
       color: #fefcf7;
-      padding: 15px 25px; }
+      padding: 15px 25px;
+      border: none;
+      cursor: pointer; }
       .create-plan .order .order-summary .order-confirmation .create-plan:hover {
         background-color: #66d2cf; }
+    .create-plan .order .order-summary .order-confirmation #summary:disabled {
+      background-color: #e2dedb; }
+
+/****************************************
+*****************Summary*****************
+****************************************/
+.create-plan .overlay-summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.7);
+  z-index: 100; }
+  .create-plan .overlay-summary.hidden {
+    display: none; }
+  .create-plan .overlay-summary .overlay-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 20px; }
+    @media (min-width: 768px) {
+      .create-plan .overlay-summary .overlay-container {
+        width: 70%; } }
+    .create-plan .overlay-summary .overlay-container.hidden {
+      display: none; }
+    .create-plan .overlay-summary .overlay-container .overlay-header {
+      background-color: #2c343e;
+      padding: 24px; }
+      @media (min-width: 768px) {
+        .create-plan .overlay-summary .overlay-container .overlay-header {
+          padding: 40px; } }
+    .create-plan .overlay-summary .overlay-container .overlay-body {
+      padding: 24px; }
+      @media (min-width: 768px) {
+        .create-plan .overlay-summary .overlay-container .overlay-body {
+          padding: 40px; } }
+      .create-plan .overlay-summary .overlay-container .overlay-body #summary-overlay-text {
+        font-family: "Fraunces", serif;
+        color: #83888f;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-bottom: 10px; }
+        .create-plan .overlay-summary .overlay-container .overlay-body #summary-overlay-text #options {
+          color: #0e8784; }
+      .create-plan .overlay-summary .overlay-container .overlay-body .summary-subtext {
+        color: #333d4b;
+        padding-bottom: 24px; }
+      @media (min-width: 768px) {
+        .create-plan .overlay-summary .overlay-container .overlay-body .checkout-mobile {
+          display: none; } }
+      .create-plan .overlay-summary .overlay-container .overlay-body .checkout-mobile #checkout {
+        background-color: #0e8784;
+        border-radius: 8px;
+        font-family: "Fraunces", serif;
+        font-size: 1.125rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fefcf7;
+        padding: 15px 25px;
+        width: 100%;
+        border: 0; }
+        .create-plan .overlay-summary .overlay-container .overlay-body .checkout-mobile #checkout:hover {
+          background-color: #66d2cf; }
+      .create-plan .overlay-summary .overlay-container .overlay-body .checkout-desktop {
+        display: none; }
+        @media (min-width: 768px) {
+          .create-plan .overlay-summary .overlay-container .overlay-body .checkout-desktop {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenlys; } }
+        @media (min-width: 768px) {
+          .create-plan .overlay-summary .overlay-container .overlay-body .checkout-desktop #checkout-desktop-price {
+            font-family: "Fraunces", serif;
+            color: #333d4b;
+            font-size: 2rem;
+            width: 50%; } }
+        .create-plan .overlay-summary .overlay-container .overlay-body .checkout-desktop #checkout-desktop {
+          background-color: #0e8784;
+          border-radius: 8px;
+          font-family: "Fraunces", serif;
+          font-size: 1.125rem;
+          text-align: center;
+          text-decoration: none;
+          color: #fefcf7;
+          padding: 15px 25px;
+          border: 0;
+          width: 50%; }
+          .create-plan .overlay-summary .overlay-container .overlay-body .checkout-desktop #checkout-desktop:hover {
+            background-color: #66d2cf; }

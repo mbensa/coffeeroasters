@@ -93,11 +93,26 @@
 
       <section class="order">
         <div class="menu">
-          <h4 class="menu-title">01&emsp; Preferences</h4>
-          <h4 class="menu-title">02&emsp; Bean type</h4>
-          <h4 class="menu-title">03&emsp; Quantity</h4>
-          <h4 class="menu-title">04&emsp; Grind option</h4>
-          <h4 class="menu-title">05&emsp; Deliveries</h4>
+          <h4 class="menu-title" data-index="0">
+            <span class="menu-title-number">01&emsp;</span>
+            <span class="menu-title-text">Preferences</span>
+          </h4>
+          <h4 class="menu-title" data-index="1">
+            <span class="menu-title-number">02&emsp;</span>
+            <span class="menu-title-text">Bean type</span>
+          </h4>
+          <h4 class="menu-title" data-index="2">
+            <span class="menu-title-number">03&emsp;</span>
+            <span class="menu-title-text">Quantity</span>
+          </h4>
+          <h4 class="menu-title" data-index="3">
+            <span class="menu-title-number">04&emsp;</span>
+            <span class="menu-title-text">Grind option</span>
+          </h4>
+          <h4 class="menu-title" data-index="4">
+            <span class="menu-title-number">05&emsp;</span>
+            <span class="menu-title-text">Deliveries</span>
+          </h4>
         </div>
 
         <div class="order-container">
@@ -113,18 +128,23 @@
               </svg>
             </div>
             <div class="order-panel">
-              <div class="order-panel-section">
+              <input type="radio" name="radio1" id="section1-choice1" value="capsule" />
+              <label for="section1-choice1">
                 <h4 class="panel-title">Capsule</h4>
                 <p class="panel-text">Compatible with Nespresso systems and similar brewers</p>
-              </div>
-              <div class="order-panel-section">
+              </label>
+
+              <input type="radio" name="radio1" id="section1-choice2" value="filter" />
+              <label for="section1-choice2">
                 <h4 class="panel-title">Filter</h4>
                 <p class="panel-text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
-              </div>
-              <div class="order-panel-section">
+              </label>
+
+              <input type="radio" name="radio1" id="section1-choice3" value="espresso" />
+              <label for="section1-choice3">
                 <h4 class="panel-title">Espresso</h4>
                 <p class="panel-text">Dense and finely ground beans for an intense, flavorful experience</p>
-              </div>
+              </label>
             </div>
           </div>
 
@@ -140,18 +160,21 @@
               </svg>
             </div>
             <div class="order-panel">
-              <div class="order-panel-section">
+              <input type="radio" name="radio2" id="section2-choice1" value="single origin" />
+              <label for="section2-choice1">
                 <h4 class="panel-title">Single origin</h4>
                 <p class="panel-text">Distinct, high quality coffee from a specific family-owned farm</p>
-              </div>
-              <div class="order-panel-section">
+              </label>
+              <input type="radio" name="radio2" id="section2-choice2" value="decaf" />
+              <label for="section2-choice2">
                 <h4 class="panel-title">Decaf</h4>
                 <p class="panel-text">Just like regular coffee, except the caffeine has been removed</p>
-              </div>
-              <div class="order-panel-section">
+              </label>
+              <input type="radio" name="radio2" id="section2-choice3" value="blended" />
+              <label for="section2-choice3">
                 <h4 class="panel-title">Blended</h4>
                 <p class="panel-text">Combination of two or three dark roasted beans of organic coffees</p>
-              </div>
+              </label>
             </div>
           </div>
 
@@ -167,18 +190,21 @@
               </svg>
             </div>
             <div class="order-panel">
-              <div class="order-panel-section">
+              <input type="radio" name="radio3" id="section3-choice1" value="250g" />
+              <label for="section3-choice1">
                 <h4 class="panel-title">250g</h4>
                 <p class="panel-text">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
-              </div>
-              <div class="order-panel-section">
+              </label>
+              <input type="radio" name="radio3" id="section3-choice2" value="500g" />
+              <label for="section3-choice2">
                 <h4 class="panel-title">500g</h4>
                 <p class="panel-text">Perfect option for a couple. Yields about 40 delectable cups.</p>
-              </div>
-              <div class="order-panel-section">
+              </label>
+              <input type="radio" name="radio3" id="section3-choice3" value="1000g" />
+              <label for="section3-choice3">
                 <h4 class="panel-title">1000g</h4>
                 <p class="panel-text">Perfect for offices and events. Yields about 90 delightful cups.</p>
-              </div>
+              </label>
             </div>
           </div>
 
@@ -194,18 +220,21 @@
               </svg>
             </div>
             <div class="order-panel">
-              <div class="order-panel-section">
+              <input type="radio" name="radio4" id="section4-choice1" value="wholebean" />
+              <label for="section4-choice1">
                 <h4 class="panel-title">Wholebean</h4>
                 <p class="panel-text">Best choice if you cherish the full sensory experience</p>
-              </div>
-              <div class="order-panel-section">
+              </label>
+              <input type="radio" name="radio4" id="section4-choice2" value="filter" />
+              <label for="section4-choice2">
                 <h4 class="panel-title">Filter</h4>
                 <p class="panel-text">For drip or pour-over coffee methods such as V60 or Aeropress</p>
-              </div>
-              <div class="order-panel-section">
+              </label>
+              <input type="radio" name="radio4" id="section4-choice3" value="cafetiére" />
+              <label for="section4-choice3">
                 <h4 class="panel-title">Cafetiére</h4>
                 <p class="panel-text">Course ground beans specially suited for french press coffee</p>
-              </div>
+              </label>
             </div>
           </div>
 
@@ -221,30 +250,52 @@
               </svg>
             </div>
             <div class="order-panel">
-              <div class="order-panel-section">
+              <input type="radio" name="radio5" id="section5-choice1" value="every week" data-price="$14.00" />
+              <label for="section5-choice1">
                 <h4 class="panel-title">Every week</h4>
                 <p class="panel-text">$14.00 per shipment. Includes free first-class shipping.</p>
-              </div>
-              <div class="order-panel-section">
+              </label>
+              <input type="radio" name="radio5" id="section5-choice2" value="every 2 weeks" data-price="$17.25" />
+              <label for="section5-choice2">
                 <h4 class="panel-title">Every 2 weeks</h4>
                 <p class="panel-text">$17.25 per shipment. Includes free priority shipping.</p>
-              </div>
-              <div class="order-panel-section">
+              </label>
+              <input type="radio" name="radio5" id="section5-choice3" value="every month" data-price="$22.50" />
+              <label for="section5-choice3">
                 <h4 class="panel-title">Every month</h4>
                 <p class="panel-text">$22.50 per shipment. Includes free priority shipping.</p>
-              </div>
+              </label>
             </div>
+          </div>
+          <div class="order-summary">
+            <div class="text-container">
+              <p class="summary-title">ORDER SUMMARY</p>
+              <p id="summary-text"></p>
+            </div>
+            <div class="order-confirmation">
+              <button type="button" class="create-plan" id="summary">Create my plan!</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="order-summary">
-              <div class="text-container">
-                <p class="summary-title">ORDER SUMMARY</p>
-                <p class="summary-text">
-                  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____, sent to me _____.”
-                </p>
-              </div>
-              <div class="order-confirmation">
-                <a href class="create-plan">Create my plan!</a>
-              </div>
+      <section class="overlay-summary hidden">
+        <div class="overlay-container hidden">
+          <div class="overlay-header">
+            <h2>Order Summary</h2>
+          </div>
+          <div class="overlay-body">
+            <p id="summary-overlay-text"></p>
+            <p class="summary-subtext">
+              Is this correct? You can proceed to checkout or go back to plan selection if something is off.
+              Subscription discount codes can also be redeemed at the checkout.
+            </p>
+            <div class="checkout-mobile">
+              <button type="button" class="create-plan" id="checkout"></button>
+            </div>
+            <div class="checkout-desktop">
+              <p id="checkout-desktop-price"></p>
+              <button type="button" class="create-plan" id="checkout-desktop">Checkout</button>
             </div>
           </div>
         </div>
@@ -299,6 +350,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/immer"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
